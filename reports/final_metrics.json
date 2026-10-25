@@ -1,0 +1,23 @@
+{
+  "dummy_baseline_test": {
+    "mae": 2.8078668683812404,
+    "mse": 14.236006051437217,
+    "r2": -0.007140648098822755,
+    "rmse": 3.7730632185847637
+  },
+  "selected_cv_mae_mean": 0.5077131762295355,
+  "selected_cv_mae_std": 0.03091177891235455,
+  "selected_model": "Ridge (tuned)",
+  "selected_model_test": {
+    "mae": 0.4497375972213063,
+    "mse": 3.2509296180317198,
+    "r2": 0.7700096957954314,
+    "residual_mean_absolute": 0.4497375972213063,
+    "residual_mean_predicted_minus_actual": 0.047816265175444794,
+    "residual_median_predicted_minus_actual": 0.17789875880516348,
+    "residual_std_predicted_minus_actual": 1.8030813772854941,
+    "rmse": 1.8030334489497746
+  },
+  "selection_metric": "mean cross-validation MAE (lower is better)",
+  "test_rows": 1322
+}

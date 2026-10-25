@@ -1,0 +1,35 @@
+Exploratory data analysis summary
+Records: 6607
+Columns: 20
+Target: Exam_Score (numeric)
+Numerical predictor columns: ['Hours_Studied', 'Attendance', 'Sleep_Hours', 'Previous_Scores', 'Tutoring_Sessions', 'Physical_Activity']
+Categorical predictor columns: ['Parental_Involvement', 'Access_to_Resources', 'Extracurricular_Activities', 'Motivation_Level', 'Internet_Access', 'Family_Income', 'Teacher_Quality', 'School_Type', 'Peer_Influence', 'Learning_Disabilities', 'Parental_Education_Level', 'Distance_from_Home', 'Gender']
+Duplicate records: 0
+Target values: count=6607, min=55, max=101, mean=67.2357, median=67.0000, standard deviation=3.8905
+Target IQR outlier candidates: 104.0 (review only; no rows removed)
+Columns with missing values:
+- Teacher_Quality: 78 (1.18%)
+- Parental_Education_Level: 90 (1.36%)
+- Distance_from_Home: 67 (1.01%)
+Review flag: 1 target value(s) exceed 100. Confirm the dataset scoring scale; the values are retained unchanged.
+Numerical values to review (no automatic correction applied):
+- Hours_Studied: negative=0, non-finite=0, IQR candidates=43
+- Tutoring_Sessions: negative=0, non-finite=0, IQR candidates=430
+- Exam_Score: negative=0, non-finite=0, IQR candidates=104
+Categorical consistency: no trim/case-normalization collisions or whitespace-only labels observed.
+
+Interpretation and limitations
+- Histograms, box plots, and IQR counts are descriptive; outlier candidates were not removed or altered.
+- Pearson correlation is shown only for numerical columns and does not establish causation.
+- Feature-versus-target plots show observed associations, not causal effects.
+- No external category domain or score cap was assumed.
+
+Generated figures
+- exam_score_distribution.png
+- numerical_feature_distributions.png
+- numerical_feature_boxplots.png
+- categorical_feature_frequencies.png
+- missing_values.png
+- numerical_features_vs_exam_score.png
+- categorical_features_vs_exam_score.png
+- numerical_correlation_heatmap.png

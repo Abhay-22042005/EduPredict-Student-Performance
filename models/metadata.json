@@ -1,0 +1,127 @@
+{
+  "cross_validation": {
+    "folds": 5,
+    "method": "KFold",
+    "random_state": 42,
+    "reported_cv_mae_mean": 0.5077131762295355,
+    "reported_cv_mae_std": 0.03091177891235455,
+    "selection_metric": "negative_mean_absolute_error",
+    "shuffle": true
+  },
+  "dataset": {
+    "path_at_training": "C:\\Users\\arjun\\Desktop\\Student_Performance_Prediction\\Dataset\\StudentPerformanceFactors.csv",
+    "rows": 6607,
+    "score_above_100_count": 1,
+    "sha256": "e8df8c4148ef83fb295ca1c092f2c6ee15272c0a8e3018b769a788ab50e96e97",
+    "source_records_modified": false,
+    "target_max": 101.0,
+    "target_min": 55.0
+  },
+  "excluded_columns": {
+    "Exam_Score": "Prediction target; excluded from all predictor inputs.",
+    "identifier_or_duplicate_columns": [],
+    "potential_leakage_columns": []
+  },
+  "feature_audit": "No identifier-like or direct target-copy columns were present in the observed schema. Previous_Scores was retained as prior-history data; all other non-target columns were retained as plausible predictors. The dataset source documentation and score scale still require provenance confirmation.",
+  "feature_types": {
+    "categorical": [
+      "Parental_Involvement",
+      "Access_to_Resources",
+      "Extracurricular_Activities",
+      "Motivation_Level",
+      "Internet_Access",
+      "Family_Income",
+      "Teacher_Quality",
+      "School_Type",
+      "Peer_Influence",
+      "Learning_Disabilities",
+      "Parental_Education_Level",
+      "Distance_from_Home",
+      "Gender"
+    ],
+    "numeric": [
+      "Hours_Studied",
+      "Attendance",
+      "Sleep_Hours",
+      "Previous_Scores",
+      "Tutoring_Sessions",
+      "Physical_Activity"
+    ]
+  },
+  "holdout_metrics": {
+    "dummy_baseline_test": {
+      "mae": 2.8078668683812404,
+      "mse": 14.236006051437217,
+      "r2": -0.007140648098822755,
+      "rmse": 3.7730632185847637
+    },
+    "selected_cv_mae_mean": 0.5077131762295355,
+    "selected_cv_mae_std": 0.03091177891235455,
+    "selected_model": "Ridge (tuned)",
+    "selected_model_test": {
+      "mae": 0.4497375972213063,
+      "mse": 3.2509296180317198,
+      "r2": 0.7700096957954314,
+      "residual_mean_absolute": 0.4497375972213063,
+      "residual_mean_predicted_minus_actual": 0.047816265175444794,
+      "residual_median_predicted_minus_actual": 0.17789875880516348,
+      "residual_std_predicted_minus_actual": 1.8030813772854941,
+      "rmse": 1.8030334489497746
+    },
+    "selection_metric": "mean cross-validation MAE (lower is better)",
+    "test_rows": 1322
+  },
+  "library_versions": {
+    "joblib": "1.6.0",
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "python": "3.14.7",
+    "scikit_learn": "1.9.1"
+  },
+  "raw_predictor_names": [
+    "Hours_Studied",
+    "Attendance",
+    "Parental_Involvement",
+    "Access_to_Resources",
+    "Extracurricular_Activities",
+    "Sleep_Hours",
+    "Previous_Scores",
+    "Motivation_Level",
+    "Internet_Access",
+    "Tutoring_Sessions",
+    "Family_Income",
+    "Teacher_Quality",
+    "School_Type",
+    "Peer_Influence",
+    "Physical_Activity",
+    "Learning_Disabilities",
+    "Parental_Education_Level",
+    "Distance_from_Home",
+    "Gender"
+  ],
+  "selected_candidate": "Ridge (tuned)",
+  "selected_candidate_tuned": true,
+  "selected_estimator": "Ridge",
+  "selected_hyperparameters": {
+    "alpha": 10.0,
+    "copy_X": true,
+    "fit_intercept": true,
+    "max_iter": null,
+    "positive": false,
+    "random_state": null,
+    "solver": "auto",
+    "tol": 0.0001
+  },
+  "selected_search_parameters": {
+    "alpha": 10.0
+  },
+  "split": {
+    "random_state": 42,
+    "shuffle": true,
+    "test_size": 0.2,
+    "train_size": 0.8
+  },
+  "target_name": "Exam_Score",
+  "training_timestamp_utc": "2026-10-24T17:24:29.116249+00:00"
+}

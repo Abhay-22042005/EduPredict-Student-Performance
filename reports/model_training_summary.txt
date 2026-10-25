@@ -1,0 +1,17 @@
+Model training and evaluation summary
+Dataset rows: 6607; predictor columns: 19.
+Train/test sizes: 5285/1322 (test fraction=0.20, random_state=42).
+CV selection: 5-fold shuffled KFold, train data only, negative MAE; lowest mean CV MAE selected.
+Selected candidate: Ridge (tuned).
+Selected mean CV MAE: 0.50771 (fold standard deviation 0.03091).
+Holdout MAE: 0.44974; RMSE: 1.80303; R-squared: 0.77001.
+Dummy holdout MAE: 2.80787; RMSE: 3.77306; R-squared: -0.00714.
+Dataset SHA-256: e8df8c4148ef83fb295ca1c092f2c6ee15272c0a8e3018b769a788ab50e96e97.
+Preprocessing and estimator were composed in a Pipeline and refit only on training rows. CV folds were reused for all candidate comparisons and tuning.
+The holdout data were used only for final metrics and post-selection permutation importance; they were not used to select the model.
+Scores above 100 and IQR outlier candidates were retained unchanged; verify the source score scale before interpreting them.
+Permutation importance measures predictive association, not causation; correlated features may share or obscure importance.
+Residuals are reported as predicted minus actual. R-squared is a regression metric and is not classification accuracy.
+A fresh Python process reloaded the saved pipeline and matched an in-memory prediction.
+Inference contract: provide a pandas DataFrame with exactly the raw predictor columns in manifest order and without Exam_Score. See docs/inference_contract.md.
+Intended use is educational analysis and decision support, not definitive judgment of individual students.

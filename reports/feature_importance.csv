@@ -1,0 +1,20 @@
+feature,importance_mean,importance_std,permutation_repeats,interpretation
+Attendance,2.3372849136009473,0.030078079397657484,10,MAE increase when raw feature values are permuted
+Hours_Studied,1.6987737997878223,0.023313752881674792,10,MAE increase when raw feature values are permuted
+Access_to_Resources,0.5520374918371432,0.011541127743630378,10,MAE increase when raw feature values are permuted
+Previous_Scores,0.5390635494802564,0.008374246883155804,10,MAE increase when raw feature values are permuted
+Parental_Involvement,0.525388048740701,0.013769142592280412,10,MAE increase when raw feature values are permuted
+Tutoring_Sessions,0.44042730081488896,0.012411211723324636,10,MAE increase when raw feature values are permuted
+Parental_Education_Level,0.210594452106108,0.007567194453621726,10,MAE increase when raw feature values are permuted
+Family_Income,0.20940240753157352,0.009375544444718657,10,MAE increase when raw feature values are permuted
+Peer_Influence,0.20842670150592787,0.005895356775236112,10,MAE increase when raw feature values are permuted
+Motivation_Level,0.20164398717406162,0.002595863922507396,10,MAE increase when raw feature values are permuted
+Distance_from_Home,0.15305963525965588,0.004699154727078713,10,MAE increase when raw feature values are permuted
+Teacher_Quality,0.14762168720403665,0.007699627319753839,10,MAE increase when raw feature values are permuted
+Extracurricular_Activities,0.11469261442961032,0.005296833843833976,10,MAE increase when raw feature values are permuted
+Learning_Disabilities,0.08679856277637965,0.004243155223319832,10,MAE increase when raw feature values are permuted
+Internet_Access,0.08136658439216568,0.0042458896001443406,10,MAE increase when raw feature values are permuted
+Physical_Activity,0.08034743201401887,0.006364042229095833,10,MAE increase when raw feature values are permuted
+Gender,0.00032475440666128176,0.0003134422816541065,10,MAE increase when raw feature values are permuted
+School_Type,-9.277073502976796e-05,0.00015256050638192857,10,MAE increase when raw feature values are permuted
+Sleep_Hours,-0.00048534906540110276,0.00019792497817796388,10,MAE increase when raw feature values are permuted

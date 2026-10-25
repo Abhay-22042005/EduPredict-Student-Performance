@@ -1,0 +1,235 @@
+Dataset inspection
+CSV path: C:\Users\arjun\Desktop\Student_Performance_Prediction\Dataset\StudentPerformanceFactors.csv
+
+Dimensions
+Rows: 6607
+Columns: 20
+
+Actual column names
+['Hours_Studied', 'Attendance', 'Parental_Involvement', 'Access_to_Resources', 'Extracurricular_Activities', 'Sleep_Hours', 'Previous_Scores', 'Motivation_Level', 'Internet_Access', 'Tutoring_Sessions', 'Family_Income', 'Teacher_Quality', 'School_Type', 'Peer_Influence', 'Physical_Activity', 'Learning_Disabilities', 'Parental_Education_Level', 'Distance_from_Home', 'Gender', 'Exam_Score']
+
+Feature and target types
+Numerical columns: ['Hours_Studied', 'Attendance', 'Sleep_Hours', 'Previous_Scores', 'Tutoring_Sessions', 'Physical_Activity', 'Exam_Score']
+Categorical columns: ['Parental_Involvement', 'Access_to_Resources', 'Extracurricular_Activities', 'Motivation_Level', 'Internet_Access', 'Family_Income', 'Teacher_Quality', 'School_Type', 'Peer_Influence', 'Learning_Disabilities', 'Parental_Education_Level', 'Distance_from_Home', 'Gender']
+Target column: Exam_Score
+Potential predictors: ['Hours_Studied', 'Attendance', 'Parental_Involvement', 'Access_to_Resources', 'Extracurricular_Activities', 'Sleep_Hours', 'Previous_Scores', 'Motivation_Level', 'Internet_Access', 'Tutoring_Sessions', 'Family_Income', 'Teacher_Quality', 'School_Type', 'Peer_Influence', 'Physical_Activity', 'Learning_Disabilities', 'Parental_Education_Level', 'Distance_from_Home', 'Gender']
+Expected columns absent: []
+Observed columns outside the expected schema: []
+
+Data types
+Hours_Studied                 int64
+Attendance                    int64
+Parental_Involvement            str
+Access_to_Resources             str
+Extracurricular_Activities      str
+Sleep_Hours                   int64
+Previous_Scores               int64
+Motivation_Level                str
+Internet_Access                 str
+Tutoring_Sessions             int64
+Family_Income                   str
+Teacher_Quality                 str
+School_Type                     str
+Peer_Influence                  str
+Physical_Activity             int64
+Learning_Disabilities           str
+Parental_Education_Level        str
+Distance_from_Home              str
+Gender                          str
+Exam_Score                    int64
+
+First five rows
+ Hours_Studied  Attendance Parental_Involvement Access_to_Resources Extracurricular_Activities  Sleep_Hours  Previous_Scores Motivation_Level Internet_Access  Tutoring_Sessions Family_Income Teacher_Quality School_Type Peer_Influence  Physical_Activity Learning_Disabilities Parental_Education_Level Distance_from_Home Gender  Exam_Score
+            23          84                  Low                High                         No            7               73              Low             Yes                  0           Low          Medium      Public       Positive                  3                    No              High School               Near   Male          67
+            19          64                  Low              Medium                         No            8               59              Low             Yes                  2        Medium          Medium      Public       Negative                  4                    No                  College           Moderate Female          61
+            24          98               Medium              Medium                        Yes            7               91           Medium             Yes                  2        Medium          Medium      Public        Neutral                  4                    No             Postgraduate               Near   Male          74
+            29          89                  Low              Medium                        Yes            8               98           Medium             Yes                  1        Medium          Medium      Public       Negative                  4                    No              High School           Moderate   Male          71
+            19          92               Medium              Medium                        Yes            6               65           Medium             Yes                  3        Medium            High      Public        Neutral                  4                    No                  College               Near Female          70
+
+Descriptive statistics
+                             count unique          top  freq       mean        std   min   25%   50%   75%    max
+Hours_Studied               6607.0    NaN          NaN   NaN  19.975329   5.990594   1.0  16.0  20.0  24.0   44.0
+Attendance                  6607.0    NaN          NaN   NaN  79.977448  11.547475  60.0  70.0  80.0  90.0  100.0
+Parental_Involvement          6607      3       Medium  3362        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Access_to_Resources           6607      3       Medium  3319        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Extracurricular_Activities    6607      2          Yes  3938        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Sleep_Hours                 6607.0    NaN          NaN   NaN    7.02906    1.46812   4.0   6.0   7.0   8.0   10.0
+Previous_Scores             6607.0    NaN          NaN   NaN  75.070531  14.399784  50.0  63.0  75.0  88.0  100.0
+Motivation_Level              6607      3       Medium  3351        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Internet_Access               6607      2          Yes  6108        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Tutoring_Sessions           6607.0    NaN          NaN   NaN   1.493719    1.23057   0.0   1.0   1.0   2.0    8.0
+Family_Income                 6607      3          Low  2672        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Teacher_Quality               6529      3       Medium  3925        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+School_Type                   6607      2       Public  4598        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Peer_Influence                6607      3     Positive  2638        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Physical_Activity           6607.0    NaN          NaN   NaN    2.96761   1.031231   0.0   2.0   3.0   4.0    6.0
+Learning_Disabilities         6607      2           No  5912        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Parental_Education_Level      6517      3  High School  3223        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Distance_from_Home            6540      3         Near  3884        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Gender                        6607      2         Male  3814        NaN        NaN   NaN   NaN   NaN   NaN    NaN
+Exam_Score                  6607.0    NaN          NaN   NaN  67.235659   3.890456  55.0  65.0  67.0  69.0  101.0
+
+Missing values by column
+Hours_Studied                  0
+Attendance                     0
+Parental_Involvement           0
+Access_to_Resources            0
+Extracurricular_Activities     0
+Sleep_Hours                    0
+Previous_Scores                0
+Motivation_Level               0
+Internet_Access                0
+Tutoring_Sessions              0
+Family_Income                  0
+Teacher_Quality               78
+School_Type                    0
+Peer_Influence                 0
+Physical_Activity              0
+Learning_Disabilities          0
+Parental_Education_Level      90
+Distance_from_Home            67
+Gender                         0
+Exam_Score                     0
+
+Duplicate rows
+0
+
+Categorical values and label consistency
+Parental_Involvement: ['Low', 'Medium', 'High']
+  No whitespace/case-normalization collisions observed.
+Access_to_Resources: ['High', 'Medium', 'Low']
+  No whitespace/case-normalization collisions observed.
+Extracurricular_Activities: ['No', 'Yes']
+  No whitespace/case-normalization collisions observed.
+Motivation_Level: ['Low', 'Medium', 'High']
+  No whitespace/case-normalization collisions observed.
+Internet_Access: ['Yes', 'No']
+  No whitespace/case-normalization collisions observed.
+Family_Income: ['Low', 'Medium', 'High']
+  No whitespace/case-normalization collisions observed.
+Teacher_Quality: ['Medium', 'High', 'Low']
+  No whitespace/case-normalization collisions observed.
+School_Type: ['Public', 'Private']
+  No whitespace/case-normalization collisions observed.
+Peer_Influence: ['Positive', 'Negative', 'Neutral']
+  No whitespace/case-normalization collisions observed.
+Learning_Disabilities: ['No', 'Yes']
+  No whitespace/case-normalization collisions observed.
+Parental_Education_Level: ['High School', 'College', 'Postgraduate']
+  No whitespace/case-normalization collisions observed.
+Distance_from_Home: ['Near', 'Moderate', 'Far']
+  No whitespace/case-normalization collisions observed.
+Gender: ['Male', 'Female']
+  No whitespace/case-normalization collisions observed.
+
+Numerical ranges and IQR outlier candidates
+Hours_Studied: min=1.0, max=44.0, IQR outlier candidates=43.0, negative values=0.0, non-finite values=0.0
+Attendance: min=60.0, max=100.0, IQR outlier candidates=0.0, negative values=0.0, non-finite values=0.0
+Sleep_Hours: min=4.0, max=10.0, IQR outlier candidates=0.0, negative values=0.0, non-finite values=0.0
+Previous_Scores: min=50.0, max=100.0, IQR outlier candidates=0.0, negative values=0.0, non-finite values=0.0
+Tutoring_Sessions: min=0.0, max=8.0, IQR outlier candidates=430.0, negative values=0.0, non-finite values=0.0
+Physical_Activity: min=0.0, max=6.0, IQR outlier candidates=0.0, negative values=0.0, non-finite values=0.0
+Exam_Score: min=55.0, max=101.0, IQR outlier candidates=104.0, negative values=0.0, non-finite values=0.0
+
+Target distribution
+Target suitability: numeric regression target; missing values=0.
+Exam_Score
+55       1
+56       1
+57       4
+58      22
+59      40
+60      77
+61     171
+62     264
+63     371
+64     501
+65     679
+66     751
+67     717
+68     759
+69     624
+70     542
+71     408
+72     304
+73     141
+74     106
+75      48
+76      16
+77       5
+78       4
+79       3
+80       5
+82       4
+83       1
+84       3
+85       1
+86       4
+87       2
+88       3
+89       3
+91       1
+92       2
+93       2
+94       4
+95       2
+96       1
+97       3
+98       3
+99       2
+100      1
+101      1
+Review flag: 1 observed target value(s) exceed 100. Confirm the scoring scale and source; no values were changed.
+Observed target frequency distribution
+Exam_Score
+55       1
+56       1
+57       4
+58      22
+59      40
+60      77
+61     171
+62     264
+63     371
+64     501
+65     679
+66     751
+67     717
+68     759
+69     624
+70     542
+71     408
+72     304
+73     141
+74     106
+75      48
+76      16
+77       5
+78       4
+79       3
+80       5
+82       4
+83       1
+84       3
+85       1
+86       4
+87       2
+88       3
+89       3
+91       1
+92       2
+93       2
+94       4
+95       2
+96       1
+97       3
+98       3
+99       2
+100      1
+101      1
+
+Interpretation notes
+- IQR counts identify candidates for review; no records were removed.
+- A score above 100 is flagged for source/scale verification, not assumed invalid.
+- Observed associations and correlations are descriptive, not causal evidence.
+- Category domains are reported as observed; no external domain was assumed.
